@@ -1,0 +1,186 @@
+[
+  {
+    "UserName": "Haitham",
+    "BandName": "Wookie Warriors",
+    "DateOfBirth": "1956-07-22",
+    "Created": "2020-06-24",
+    "LastActive": "2020-06-21",
+    "Instruments": [{ "name": "guitar" }],
+    "Introduction": "Sunt esse aliqua ullamco in incididunt consequat commodo. Nisi ad esse elit ipsum commodo fugiat est ad. Incididunt nostrud incididunt nostrud sit excepteur occaecat.\r\n",
+    "LookingFor": "Dolor anim cupidatat occaecat aliquip et Lorem ut elit fugiat. Mollit eu pariatur est sunt. Minim fugiat sit do dolore eu elit ex do id sunt. Qui fugiat nostrud occaecat nisi est dolor qui fugiat laborum cillum. Occaecat consequat ex mollit commodo ad irure cillum nulla velit ex pariatur veniam cupidatat. Officia veniam officia non deserunt mollit.\r\n",
+    "City": "Greenbush",
+    "Country": "Martinique",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/54.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "JHendrix",
+    "DateOfBirth": "1975-10-12",
+    "BandName": "No band",
+    "Created": "2019-12-09",
+    "Instruments": [{ "name": "guitar" }],
+    "LastActive": "2020-05-06",
+    "Introduction": "You know who I am, I'm the man\r\n",
+    "LookingFor": "I'm looking for a drummer who knows his role.\r\n",
+    "City": "Seattle",
+    "Country": "USA",
+    "Photos": [
+      {
+        "Url": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NTU2MzE2MjQ0MzEzNjEx/jimi-hendrix-9334756-1-402.jpg",
+        "IsMain": true
+      },
+      {
+        "Url": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-1706-square.jpg?resize=1800,1200&w=1200",
+        "IsMain": false
+      }
+    ]
+  },
+  {
+    "UserName": "OzzyOsbourne",
+    "DateOfBirth": "1948-01-24",
+    "BandName": "Black Sabbath",
+    "Created": "2019-08-10",
+    "Instruments": [{ "name": "singer" }],
+    "LastActive": "2020-05-12",
+    "Introduction": "Welcome to the darkness.\r\n",
+    "LookingFor": "Rowdy group looking to smash it.\r\n",
+    "City": "Aston",
+    "Country": "United Kingdom",
+    "Photos": [
+      {
+        "Url": "https://i.ebayimg.com/images/g/LcAAAOSw-CpX9LUO/s-l400.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "DrDre",
+    "Instruments": [{ "name": "producer" }, { "name": "singer" }],
+    "DateOfBirth": "1972-06-22",
+    "BandName": "Deathrow",
+    "Created": "2019-04-24",
+    "LastActive": "2020-06-17",
+    "Introduction": "Premier beat producer and part time rapper.\r\n",
+    "LookingFor": "Honestly I don't know why I'm here, I don't need y'all.\r\n",
+    "City": "Los Angeles",
+    "Country": "USA",
+    "Photos": [
+      {
+        "Url": "https://support.musicgateway.com/wp-content/uploads/2020/04/Dr-Dre-Music-Producer-Music-Gateway.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Enrique",
+    "Instruments": [{ "name": "singer" }, { "name": "piano" }],
+    "DateOfBirth": "1977-01-12",
+    "BandName": "None",
+    "Created": "2019-04-30",
+    "LastActive": "2020-06-21",
+    "Introduction": "Hola chicos que tal.\r\n",
+    "LookingFor": "Backup singers.\r\n",
+    "City": "Madrid",
+    "Country": "Spain",
+    "Photos": [
+      {
+        "Url": "https://monmona.com/wp-content/uploads/2020/04/artworks-000147383875-2bt4ll-t500x500.jpg",
+        "IsMain": true
+      },
+      {
+        "Url": "https://www.etonline.com/sites/default/files/styles/max_1280x720/public/images/2020-02/gettyimages-104479022.jpg?h=47c20208&itok=685GOCOm",
+        "IsMain": false
+      }
+    ]
+  },
+  {
+    "UserName": "Guetta",
+    "Gender": "male",
+    "Instruments": [{ "name": "piano" }, { "name": "drum" }],
+    "DateOfBirth": "1950-02-07",
+    "BandName": "Todd",
+    "Created": "2019-04-29",
+    "LastActive": "2020-05-16",
+    "Introduction": "I make music for drunk people.\r\n",
+    "LookingFor": "Any vocalists wanna collab?.\r\n",
+    "City": "Cliff",
+    "Country": "British Indian Ocean Territory",
+    "Photos": [
+      {
+        "Url": "https://media.resources.festicket.com/image/300x300/center/top/filters:quality(70)/www/artists/DavidGuetta.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "LadyG",
+    "Instruments": [{ "name": "singer" }, { "name": "other" }],
+    "DateOfBirth": "1988-04-09",
+    "BandName": "None",
+    "Created": "2020-04-05",
+    "LastActive": "2020-06-23",
+    "Introduction": "I make crazy songs and I used to dress weird.\r\n",
+    "LookingFor": "Let's collab\r\n",
+    "City": "New York",
+    "Country": "USA",
+    "Photos": [
+      {
+        "Url": "https://media.resources.festicket.com/image/300x300/center/top/filters:quality(70)/www/artists/LadyGaga.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Drake",
+    "DateOfBirth": "1990-03-23",
+    "Instruments": [{ "name": "singer" }],
+    "BandName": "OVO",
+    "Created": "2020-03-14",
+    "LastActive": "2020-05-17",
+    "Introduction": "Hottest rapper/Singer in the game.\r\n",
+    "LookingFor": "Not gonna be cheap working with me lol.\r\n",
+    "City": "Toronto",
+    "Country": "Canada",
+    "Photos": [
+      {
+        "Url": "https://townsquare.media/site/812/files/2019/11/Drake-Rocking-In-Paris.jpg?w=980&q=75",
+        "IsMain": true
+      },
+      {
+        "Url": "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ed578988b3c370006234c35%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D43%26cropX2%3D1074%26cropY1%3D49%26cropY2%3D1080",
+        "IsMain": false
+      }
+    ]
+  },
+  {
+    "UserName": "Kanye",
+    "DateOfBirth": "1980-03-23",
+    "Instruments": [
+      { "name": "singer" },
+      { "name": "producer" },
+      { "name": "guitar" },
+      { "name": "piano" }
+    ],
+    "BandName": "OVO",
+    "Created": "2020-03-14",
+    "LastActive": "2020-05-17",
+    "Introduction": "I'm the greatest of all time\r\n",
+    "LookingFor": "New upcoming rappers to feature in my album.\r\n",
+    "City": "Chicago",
+    "Country": "USA",
+    "Photos": [
+      {
+        "Url": "https://quincy-network.s3.ca-central-1.amazonaws.com/wp-content/uploads/sites/8/2020/08/0803_kanye-860x645.jpg",
+        "IsMain": true
+      },
+      {
+        "Url": "https://content.fortune.com/wp-content/uploads/2018/05/kanye-west-album-cover-performing.jpg?resize=750,500",
+        "IsMain": false
+      }
+    ]
+  }
+]
