@@ -8,6 +8,13 @@ import { NgxGalleryAnimation } from '@kolkov/ngx-gallery';
 import { TabDirective, TabsetComponent } from 'ngx-bootstrap/tabs';
 import { MessageService } from 'src/app/_services/message.service';
 import { Message } from 'src/app/_models/message';
+import {
+  faGuitar,
+  faDrum,
+  faMicrophone,
+  faKeyboard,
+  faPlay,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-member-detail',
@@ -21,6 +28,11 @@ export class MemberDetailComponent implements OnInit {
   galleryImages: NgxGalleryImage[];
   activeTab: TabDirective;
   messages: Message[] = [];
+  faGuitar = faGuitar;
+  faDrum = faDrum;
+  faMicrophone = faMicrophone;
+  faKeyboard = faKeyboard;
+  faPlay = faPlay;
 
   constructor(
     private messageService: MessageService,

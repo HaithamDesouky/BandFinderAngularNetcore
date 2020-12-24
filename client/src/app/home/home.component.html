@@ -1,17 +1,33 @@
 <div class="home-section">
   <div>
-    <div class="home-wrapper">
+    <div
+      class="home-wrapper"
+      *ngIf="(accountService.currentUser$ | async) === null"
+    >
       <h2>Welcome to BandFinder</h2>
       <h1>
         Connecting artists and cultivating a community for creatives to meet,
         collaborate and grow.
       </h1>
     </div>
+    <div
+      class="home-wrapper"
+      *ngIf="accountService.currentUser$ | async as user"
+    >
+      <h2>Welcome back {{ user.username }}</h2>
+      <h1>
+        We missed you! Go to your account and catch up on your messages and see
+        who is new in the world of BANDFINDER!
+      </h1>
+    </div>
   </div>
 </div>
 
 <!-- ABOUT SECTION  -->
-<section class="about-section row">
+<section
+  class="about-section row"
+  *ngIf="(accountService.currentUser$ | async) === null"
+>
   <div class="col-lg-6 about-left mb-5">
     <img src="../../assets/images/guitarist.jfif" alt="about image" />
 
@@ -90,34 +106,80 @@
     <div class="col-lg-4">
       <div class="community-boxes">
         <img
-          src="../../assets//images/guitarist.jfif"
+          src="https://quincy-network.s3.ca-central-1.amazonaws.com/wp-content/uploads/sites/8/2020/08/0803_kanye-860x645.jpg"
           className="img-responsive"
-          alt="Fine Arts"
+          alt="Kanye"
         />
-
-        <h4>artist 1</h4>
+        <h4>Kanye</h4>
+        <ul class="instruments-list">
+          <li>
+            <div class="icon-container">
+              <fa-icon [icon]="faGuitar"></fa-icon>
+            </div>
+          </li>
+          <li>
+            <div class="icon-container">
+              <fa-icon [icon]="faDrum"></fa-icon>
+            </div>
+          </li>
+          <li>
+            <div class="icon-container">
+              <fa-icon [icon]="faMicrophone"></fa-icon>
+            </div>
+          </li>
+          <li>
+            <div class="icon-container">
+              <fa-icon [icon]="faKeyboard"></fa-icon>
+            </div>
+          </li>
+          <li>
+            <div class="icon-container">
+              <fa-icon [icon]="faPlay"></fa-icon>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="col-lg-4">
       <div class="community-boxes">
         <img
-          src="../../assets//images/guitarist.jfif"
+          src="https://res.cloudinary.com/dt9m67fqv/image/upload/v1608747388/pfylek4rnwkh9dh4jrsu.jpg"
           className="img-responsive"
-          alt="artist 1"
+          alt="Mozie"
         />
-        <h4>artist 1</h4>
+        <h4>Mozard69</h4>
+        <ul class="instruments-list">
+          <li>
+            <div class="icon-container">
+              <fa-icon [icon]="faKeyboard"></fa-icon>
+            </div>
+          </li>
+
+          <li>
+            <div class="icon-container">
+              <fa-icon [icon]="faPlay"></fa-icon>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="col-lg-4">
       <div class="community-boxes">
         <img
-          src="../../assets//images/guitarist.jfif"
+          src="https://media.resources.festicket.com/image/300x300/center/top/filters:quality(70)/www/artists/LadyGaga.jpg"
           className="img-responsive"
-          alt="artist 1"
+          alt="Kanye"
         />
-        <h4>artist 1</h4>
+        <h4>LadyG</h4>
+        <ul class="instruments-list">
+          <li>
+            <div class="icon-container">
+              <fa-icon [icon]="faMicrophone"></fa-icon>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -27,6 +27,46 @@ a {
   font-size: 16px;
 }
 
+.submission-button {
+  background-color: black;
+  color: #d7b065;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  font-size: 16px;
+  transition: all ease-in 0.2s;
+
+  &:hover {
+    background-color: white;
+    box-shadow: inset 0 0 0 5px #d7b065;
+  }
+}
+
+.submission-button-secondary {
+  background-color: #d7b065;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  font-size: 16px;
+  transition: all ease-in 0.2s;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    box-shadow: inset 0 0 0 5px #d7b065;
+  }
+}
+
+.button-max-width {
+  width: 100%;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #d7b065;
+  border-color: #d7b065;
+}
+
 .tab-panel {
   border: 1px solid #ddd;
   padding: 10px;
@@ -35,9 +75,13 @@ a {
 
 .nav-tabs > li.open,
 .member-tabset > .nav-tabs > li:hover {
-  border-bottom: 4px solid #fbcdcf;
+  border-bottom: 4px solid #d7b065;
 }
 
+.nav-tabs > li.open,
+.member-tabset > .nav-tabs > li > a {
+  color: #d7b065;
+}
 .member-tabset > .nav-tabs > li.open > a,
 .member-tabset > .nav-tabs > li:hover > a {
   border: 0;
@@ -56,7 +100,7 @@ a {
 }
 
 .member-tabset > .nav-tabs > li.active {
-  border-bottom: 4px solid #e95420;
+  border-bottom: 4px solid #d7b065;
   position: relative;
 }
 

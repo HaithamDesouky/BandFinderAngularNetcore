@@ -55,7 +55,10 @@
         <div *ngIf="container === 'Outbox'">
           <img
             class="img-circle rounded-circle mr-2"
-            src="{{ message.recipientPhotoUrl || './assets/user.png' }}"
+            src="{{
+              message.recipientPhotoUrl ||
+                '../../../../../assets/images/user.png'
+            }}"
             alt="{{ message.recipientUsername }}"
           />
           <strong>{{ message.recipientUsername | titlecase }}</strong>
@@ -63,7 +66,9 @@
         <div *ngIf="container !== 'Outbox'">
           <img
             class="img-circle rounded-circle mr-2"
-            src="{{ message.senderPhotoUrl || './assets/user.png' }}"
+            src="{{
+              message.senderPhotoUrl || '../../../../../assets/images/user.png'
+            }}"
             alt="{{ message.senderUsername }}"
           />
           <strong>{{ message.senderUsername | titlecase }}</strong>
@@ -82,7 +87,6 @@
     </tr>
   </table>
 </div>
-<!-- *ngIf="pagination && !loading -->
 
 <div class="d-flex justify-content-center" *ngIf="pagination && !loading">
   <pagination

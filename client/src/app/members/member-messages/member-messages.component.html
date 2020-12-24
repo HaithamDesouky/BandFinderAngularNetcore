@@ -7,7 +7,10 @@
         <div>
           <span class="chat-img float-right">
             <img
-              src="{{ message.senderPhotoUrl || './assets/user.png' }}"
+              src="{{
+                message.senderPhotoUrl ||
+                  '../../../../../assets/images/user.png'
+              }}"
               alt="{{ message.senderUsername }}"
               class="rounded-circle"
             />
@@ -48,7 +51,7 @@
         <input
           type="text"
           [(ngModel)]="messageContent"
-          class="form-control input s-m"
+          class="form-control input s-m message-input"
           placeholder="Send a message"
           name="messageContent"
           required
@@ -56,10 +59,10 @@
         <div class="input-group-append">
           <button
             [disabled]="!messageForm.valid"
-            class="btn btn-primary"
+            class="btn submission-button"
             type="submit"
           >
-            send
+            Send
           </button>
         </div>
       </div>

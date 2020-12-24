@@ -17,6 +17,7 @@ import {
   faMicrophone,
   faKeyboard,
   faPlay,
+  faQuestion,
 } from '@fortawesome/free-solid-svg-icons';
 import { Instrument } from '../_models/instrument';
 
@@ -36,6 +37,7 @@ export class RegisterComponent implements OnInit {
   faMicrophone = faMicrophone;
   faKeyboard = faKeyboard;
   faPlay = faPlay;
+  faQuestion = faQuestion;
 
   constructor(
     private accountService: AccountService,

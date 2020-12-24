@@ -2,8 +2,8 @@
   <div class="col-4">
     <div class="card">
       <img
-        src="{{ member.photoUrl || './assets/user.png' }}"
-        alt="{{ member.knownAs }}"
+        src="{{ member.photoUrl || '../../../../../assets/images/user.png' }}"
+        alt="{{ member.username }}"
         class="card-img-top img-thumbnail"
       />
       <div class="card-body">
@@ -14,10 +14,12 @@
           <strong>Location:</strong>
           <p>{{ member.city }}, {{ member.country }}</p>
         </div>
+
         <div>
-          <strong>Age:</strong>
-          <p>{{ member.age }}</p>
+          <strong>Bandname:</strong>
+          <p>{{ member.bandName || "Solo Artist" }}</p>
         </div>
+
         <div>
           <strong>Last Active:</strong>
           <p>{{ member.lastActive | timeago }}</p>
@@ -29,8 +31,7 @@
       </div>
       <div class="card-footer">
         <div class="btn-group d-flex">
-          <button class="btn btn-primary">Like</button>
-          <button class="btn btn-success" (click)="selectTab(3)">
+          <button class="btn submission-button" (click)="selectTab(2)">
             Message
           </button>
         </div>
@@ -41,18 +42,46 @@
   <div class="col-8">
     <tabset class="member-tabset" #memberTabs>
       <tab
-        heading="About {{ member.knownAs }}"
+        heading="About {{ member.username | titlecase }}"
         (selectTab)="onTabActivated($event)"
       >
-        <h4>Description</h4>
+        <h4>About me:</h4>
         <p>{{ member.introduction }}</p>
-        <h4>Looking for</h4>
+        <h4>Looking for:</h4>
         <p>{{ member.lookingFor }}</p>
+
+        <div class="instruments-list">
+          <h4>Instruments:</h4>
+          <ul>
+            <li *ngFor="let instrument of member.instruments">
+              <div *ngIf="instrument.name === 'guitar'" class="icon-container">
+                <fa-icon [icon]="faGuitar"></fa-icon>
+              </div>
+              <div *ngIf="instrument.name === 'drum'" class="icon-container">
+                <fa-icon [icon]="faDrum"></fa-icon>
+              </div>
+              <div *ngIf="instrument.name === 'singer'" class="icon-container">
+                <fa-icon [icon]="faMicrophone"></fa-icon>
+              </div>
+              <div *ngIf="instrument.name === 'piano'" class="icon-container">
+                <fa-icon [icon]="faKeyboard"></fa-icon>
+              </div>
+              <div
+                *ngIf="instrument.name === 'producer'"
+                class="icon-container"
+              >
+                <fa-icon [icon]="faPlay"></fa-icon>
+              </div>
+              {{ instrument.name | titlecase }}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Age:</h4>
+          <p>{{ member.age }}</p>
+        </div>
       </tab>
-      <tab heading="Interests" (selectTab)="onTabActivated($event)">
-        <h4>Interests</h4>
-        <p>{{ member.interests }}</p>
-      </tab>
+
       <tab heading="Photos" (selectTab)="onTabActivated($event)">
         <ngx-gallery
           [options]="galleryOptions"

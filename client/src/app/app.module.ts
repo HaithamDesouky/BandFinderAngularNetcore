@@ -13,7 +13,6 @@ import { RegisterComponent } from './register/register.component';
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MessagesComponent } from './messages/messages.component';
-import { ListsComponent } from './lists/lists/lists.component';
 import { SharedModule } from './_modules/shared.module';
 import { TestErrorsComponent } from './errors/test-errors/test-errors.component';
 import { ErrorInterceptor } from './_interceptors/error.interceptor';
@@ -45,7 +44,6 @@ import { FooterComponent } from './footer/footer.component';
     MemberListComponent,
     MemberDetailComponent,
     MessagesComponent,
-    ListsComponent,
     TestErrorsComponent,
     NotFoundComponent,
     ServerErrorComponent,

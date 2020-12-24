@@ -1,5 +1,9 @@
 <div class="text-center-mt-3">
-  <h2>Your matches - {{ pagination?.totalItems }}</h2>
+  <h2>Our members - {{ pagination?.totalItems }}</h2>
+  <p>
+    If you want, you can narrow your search down by instrument, age, last-active
+    or newest member.
+  </p>
 </div>
 
 <div class="container mt-3">
@@ -27,7 +31,7 @@
     </div>
 
     <div class="form-group px-2">
-      <label> Show: </label>
+      <label> Instrument: </label>
       <select
         name="instrument"
         style="width: 130px"
@@ -43,15 +47,19 @@
       </select>
     </div>
 
-    <button class="btn btn-primary ml-1" type="submit">Apply filters</button>
-    <button (click)="resetFilters()" class="btn btn-info ml-1" type="submit">
+    <button class="btn submission-button" type="submit">Apply filters</button>
+    <button
+      (click)="resetFilters()"
+      class="btn submission-button-secondary ml-1"
+      type="submit"
+    >
       Reset filters
     </button>
     <div class="col">
       <div class="btn-group float-right">
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn submission-button mr-1"
           name="orderBy"
           [(ngModel)]="userParams.orderBy"
           (click)="loadMembers()"
@@ -61,7 +69,7 @@
         </button>
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn submission-button"
           name="orderBy"
           [(ngModel)]="userParams.orderBy"
           (click)="loadMembers()"
@@ -75,7 +83,7 @@
 </div>
 
 <div class="row">
-  <div *ngFor="let member of members" class="col-2">
+  <div *ngFor="let member of members" class="col-3">
     <app-member-card [member]="member"></app-member-card>
   </div>
 </div>

@@ -1,7 +1,56 @@
+// ---------------------------------------
+// GENERAL
+// STYLING
+// ----------------------------------------
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+// ---------------------------------------
+// INSTRUMENTS
+// STYLING
+// ----------------------------------------
+
+.instruments-list {
+  ul {
+    list-style: none;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      font-size: 22px;
+    }
+
+    fa-icon {
+      font-size: 25px;
+      color: #d7b065;
+      margin-right: 10px;
+    }
+  }
+}
+
+.icon-container {
+  width: 40px;
+}
+
+// ---------------------------------------
+// TABS STYLING
+// STYLING
+// ----------------------------------------
+
 .img-thumbnail {
   margin: 25px;
   width: 85%;
   height: 85%;
+  border-radius: 20px;
+}
+.card {
+  border: none;
 }
 
 .card-body {

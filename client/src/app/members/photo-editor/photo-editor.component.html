@@ -3,13 +3,15 @@
     <img
       src="{{ photo.url }}"
       alt="{{ photo.url }}"
-      class="img-thumbnail p-1"
+      class="img-thumbnail p-2"
     />
     <div class="text-center">
       <button
-        class="btn btn-sm"
+        class="btn btn-sm mr-2"
         [disabled]="photo.isMain"
-        [ngClass]="photo.isMain ? 'btn-success active' : 'btn-outline success'"
+        [ngClass]="
+          photo.isMain ? 'btn-outline ' : ' submission-button disabled'
+        "
         (click)="setMainPhoto(photo)"
       >
         Main
