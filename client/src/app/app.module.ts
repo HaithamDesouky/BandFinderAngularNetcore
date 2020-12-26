@@ -34,6 +34,7 @@ import { LoginComponent } from './authentication/login/login/login.component';
 import { SignupComponent } from './authentication/signup/signup/signup.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
+import { InstrumentsListComponent } from './members/instruments/instruments-list/instruments-list.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     SignupComponent,
     FooterComponent,
+    InstrumentsListComponent,
   ],
   imports: [
     BrowserModule,

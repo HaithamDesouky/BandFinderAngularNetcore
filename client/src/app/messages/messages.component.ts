@@ -24,18 +24,19 @@ export class MessagesComponent implements OnInit {
   }
 
   loadMessages() {
-    this.loading = true;
+    // console.log(this.pagination);
     this.messageService
       .getMessages(this.pageNumber, this.pageSize, this.container)
       .subscribe((response) => {
+        console.log(response);
         this.messages = response.result;
         this.pagination = response.pagination;
-        this.loading = false;
       });
   }
 
   pageChanged(event: any) {
     this.pageNumber = event.page;
+    console.log(event);
     this.loadMessages();
   }
   deleteMessage(id: number) {

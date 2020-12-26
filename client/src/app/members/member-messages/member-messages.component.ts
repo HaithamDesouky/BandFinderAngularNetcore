@@ -23,12 +23,11 @@ export class MemberMessagesComponent implements OnInit {
   ngOnInit(): void {}
 
   sendMessage() {
-    console.log(this.messageContent);
     this.messageService
       .sendMessage(this.username, this.messageContent)
       .subscribe((message) => {
         this.messages.push(message);
-        this.messageForm.reset;
+        this.messageForm.form.reset();
         this.toastr.success(
           'Messages successfuly sent to ' +
             this.username.charAt(0).toUpperCase() +

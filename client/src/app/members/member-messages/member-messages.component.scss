@@ -1,11 +1,16 @@
 .message-input {
   height: 58px;
-  // &:focus {
-  //   border: 4px solid #d7b065;
-  // }
+  &:focus {
+    border: 1px solid #d7b065;
+  }
 }
 .card {
   border: none;
+}
+
+.over-flow-control {
+  max-height: 495px;
+  overflow-y: scroll;
 }
 
 .chat {

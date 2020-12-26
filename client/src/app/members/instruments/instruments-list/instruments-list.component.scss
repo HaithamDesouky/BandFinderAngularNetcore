@@ -1,0 +1,14 @@
+.instruments-list {
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    margin-bottom: 0;
+
+    fa-icon {
+      color: #d7b065;
+      font-size: 30px;
+    }
+  }
+}
