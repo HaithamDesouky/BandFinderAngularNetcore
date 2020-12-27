@@ -21,7 +21,9 @@ namespace API.Extensions
         services.AddScoped<LogUserActivity>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
-         services.AddDbContext<DataContext>(options => { options.UseSqlite(config.GetConnectionString("DefaultConnection")); 
+
+        
+         services.AddDbContext<DataContext>(options => { options.UseMySql(config.GetConnectionString("DefaultConnection")); 
          });
 
          return services;

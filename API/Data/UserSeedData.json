@@ -1,18 +1,18 @@
 [
   {
-    "UserName": "Haitham",
-    "BandName": "Wookie Warriors",
-    "DateOfBirth": "1956-07-22",
+    "UserName": "TravisG",
+    "BandName": "Blink 182",
+    "DateOfBirth": "1976-07-22",
     "Created": "2020-06-24",
     "LastActive": "2020-06-21",
-    "Instruments": [{ "name": "guitar" }],
+    "Instruments": [{ "name": "drum" }],
     "Introduction": "Sunt esse aliqua ullamco in incididunt consequat commodo. Nisi ad esse elit ipsum commodo fugiat est ad. Incididunt nostrud incididunt nostrud sit excepteur occaecat.\r\n",
     "LookingFor": "Dolor anim cupidatat occaecat aliquip et Lorem ut elit fugiat. Mollit eu pariatur est sunt. Minim fugiat sit do dolore eu elit ex do id sunt. Qui fugiat nostrud occaecat nisi est dolor qui fugiat laborum cillum. Occaecat consequat ex mollit commodo ad irure cillum nulla velit ex pariatur veniam cupidatat. Officia veniam officia non deserunt mollit.\r\n",
-    "City": "Greenbush",
-    "Country": "Martinique",
+    "City": "Fontana",
+    "Country": "California",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women/54.jpg",
+        "Url": "https://ca-times.brightspotcdn.com/dims4/default/101a8d8/2147483647/strip/true/crop/1727x1130+0+0/resize/840x550!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fae%2F41%2Fad9ae0ba2ec112c682f1fc6f5dca%2Fla-tr-lvn-las-vegas-nightlife-travis-barker-20-001",
         "IsMain": true
       }
     ]
@@ -179,6 +179,32 @@
       },
       {
         "Url": "https://content.fortune.com/wp-content/uploads/2018/05/kanye-west-album-cover-performing.jpg?resize=750,500",
+        "IsMain": false
+      }
+    ]
+  },
+  {
+    "UserName": "Mozart69",
+    "DateOfBirth": "1880-03-23",
+    "Instruments": [
+      { "name": "producer" },
+      { "name": "drum" },
+      { "name": "piano" }
+    ],
+    "BandName": "The WolfGang",
+    "Created": "1800-03-14",
+    "LastActive": "1899-05-17",
+    "Introduction": "Born in Salzburg, in the Holy Roman Empire, Mozart showed prodigious ability from his earliest childhood. Already competent on keyboard and violin, he composed from the age of five and performed before European royalty. At 17, Mozart was engaged as a musician at the Salzburg court but grew restless and travelled in search of a better position. While visiting Vienna in 1781, he was dismissed from his Salzburg position. He chose to stay in Vienna, where he achieved fame but little financial security. During his final years in Vienna, he composed many of his best-known symphonies, concertos, and operas, and portions of the Requiem, which was largely unfinished at the time of his early death at the age of 35. The circumstances of his death have been much mythologized\r\n",
+    "LookingFor": "I'm looking for freestyles. Hit me up.\r\n",
+    "City": "Salzburg",
+    "Country": "Austria",
+    "Photos": [
+      {
+        "Url": "https://res.cloudinary.com/dt9m67fqv/image/upload/v1608747388/pfylek4rnwkh9dh4jrsu.jpg",
+        "IsMain": true
+      },
+      {
+        "Url": "https://res.cloudinary.com/dt9m67fqv/image/upload/v1608747750/gzbjjjsz9mxcx22iggm4.jpg",
         "IsMain": false
       }
     ]
