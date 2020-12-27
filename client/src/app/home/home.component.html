@@ -11,10 +11,10 @@
       </h1>
     </div>
     <div
-      class="home-wrapper"
+      class="home-wrapper mt--5"
       *ngIf="accountService.currentUser$ | async as user"
     >
-      <h2 class="my-3">Welcome back {{ user.username }}</h2>
+      <h2>Welcome back {{ user.username }}</h2>
 
       <h1>
         We missed you! Go to your account and catch up on your messages and see

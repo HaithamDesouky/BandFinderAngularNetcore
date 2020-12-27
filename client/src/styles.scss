@@ -14,11 +14,20 @@ body {
   overflow-x: hidden;
 }
 
+html,
+body {
+  min-height: 100vh;
+}
+
 h1 {
   color: #3d3d3f;
   font-family: "Playfair Display", serif;
   font-size: 40px;
   line-height: normal;
+
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
+  }
 }
 
 p,
