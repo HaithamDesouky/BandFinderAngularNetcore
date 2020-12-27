@@ -52,7 +52,7 @@ h3 {
   left: 50%;
 
   @media screen and (max-width: 992px) {
-    margin-top: -180px;
+    margin-top: 0;
     height: 100vh;
   }
 }
@@ -127,6 +127,10 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
+
+    @media screen and (max-width: 772px) {
+      font-size: 16px;
+    }
 
     > div {
       width: 40px;
