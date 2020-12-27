@@ -12,7 +12,7 @@ import { MessageService } from '../_services/message.service';
 export class MessagesComponent implements OnInit {
   messages: Message[];
   pagination: Pagination;
-  container = 'Outbox';
+  container = 'Inbox';
   pageNumber = 1;
   pageSize = 5;
   loading = false;
@@ -24,11 +24,9 @@ export class MessagesComponent implements OnInit {
   }
 
   loadMessages() {
-    // console.log(this.pagination);
     this.messageService
       .getMessages(this.pageNumber, this.pageSize, this.container)
       .subscribe((response) => {
-        console.log(response);
         this.messages = response.result;
         this.pagination = response.pagination;
       });
@@ -36,7 +34,6 @@ export class MessagesComponent implements OnInit {
 
   pageChanged(event: any) {
     this.pageNumber = event.page;
-    console.log(event);
     this.loadMessages();
   }
   deleteMessage(id: number) {

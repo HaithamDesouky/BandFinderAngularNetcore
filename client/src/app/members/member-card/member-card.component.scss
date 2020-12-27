@@ -33,6 +33,11 @@
   display: block;
   margin: 0 auto;
   margin-top: 5px;
+
+  @media screen and (max-width: 992px) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .card-img-wrapper {
@@ -57,7 +62,8 @@
   margin-top: 10px;
 
   button {
-    width: 50px;
+    width: 35px;
+    padding: 4px 0px;
   }
 
   @media screen and (min-width: 992px) {

@@ -49,7 +49,7 @@ export class MemberDetailComponent implements OnInit {
     );
     this.galleryOptions = [
       {
-        width: '500px',
+        width: '440px',
         height: '500px',
         imagePercent: 100,
         thumbnailsColumns: 4,
@@ -86,7 +86,6 @@ export class MemberDetailComponent implements OnInit {
   }
 
   onTabActivated(data: TabDirective) {
-    console.log('activated', data);
     this.activeTab = data;
     if (this.activeTab.heading === 'Messages' && this.messages.length === 0) {
       this.loadMessages();

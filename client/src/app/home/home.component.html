@@ -14,10 +14,17 @@
       class="home-wrapper"
       *ngIf="accountService.currentUser$ | async as user"
     >
-      <h2>Welcome back {{ user.username }}</h2>
+      <h2 class="my-3">Welcome back {{ user.username }}</h2>
+
       <h1>
         We missed you! Go to your account and catch up on your messages and see
         who is new in the world of BANDFINDER!
+      </h1>
+
+      <h1 style="color: #d7b065" class="my-2" *ngIf="pagination">
+        You have
+        <strong style="color: black">{{ pagination.totalItems }}</strong> new
+        messages.
       </h1>
     </div>
   </div>
@@ -32,6 +39,7 @@
     <img src="../../assets/images/guitarist.jfif" alt="about image" />
 
     <h4>Looking for an artist or band?</h4>
+
     <p>
       In our community we have various artists and bands willing to share their
       talents with other artists. Click below to view our members who are
@@ -103,7 +111,7 @@
   </div>
 
   <div class="d-flex flex-wrap justify-content-center">
-    <div class="col-lg-4">
+    <div class="col-sm-12 col-md-4 col-lg-4">
       <div class="community-boxes">
         <img
           src="https://quincy-network.s3.ca-central-1.amazonaws.com/wp-content/uploads/sites/8/2020/08/0803_kanye-860x645.jpg"
@@ -141,7 +149,7 @@
       </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-sm-12 col-md-4 col-lg-4">
       <div class="community-boxes">
         <img
           src="https://res.cloudinary.com/dt9m67fqv/image/upload/v1608747388/pfylek4rnwkh9dh4jrsu.jpg"
@@ -165,7 +173,7 @@
       </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-sm-12 col-md-4 col-lg-4">
       <div class="community-boxes">
         <img
           src="https://media.resources.festicket.com/image/300x300/center/top/filters:quality(70)/www/artists/LadyGaga.jpg"

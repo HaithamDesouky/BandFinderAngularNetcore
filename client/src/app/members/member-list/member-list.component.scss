@@ -11,11 +11,23 @@
 
   label {
     margin-bottom: 0;
+    padding: 0 10px;
+  }
+
+  select {
+    width: 130px;
+    @media screen and (max-width: 992px) {
+      width: 90px;
+    }
   }
 
   button {
     height: 42px;
-    margin-top: -15px;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-around;
   }
 
   @media screen and (max-width: 992px) {
@@ -35,5 +47,33 @@
   @media screen and (max-width: 992px) {
     width: 100%;
     margin-bottom: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    button {
+      width: 45%;
+    }
+  }
+}
+
+.filter-inputs {
+  @media screen and (max-width: 772px) {
+    div {
+      flex-direction: column;
+    }
+  }
+}
+
+.selected {
+  background-color: white;
+  border: 1px solid #d7b065;
+}
+
+.members-list {
+  @media screen and (max-width: 992px) {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 770px) {
+    margin-top: 80px;
   }
 }

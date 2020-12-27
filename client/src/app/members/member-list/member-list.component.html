@@ -8,85 +8,88 @@
 
 <div class="container mt-3">
   <form #form="ngForm" class="filters-form mb-3" (ngSubmit)="loadMembers()">
-    <div class="filters-group">
-      <div class="form-group">
-        <label> Age from: </label>
-        <input
-          type="number"
-          class="form-control ml-1"
-          style="width: 70px"
-          name="minAge"
-          [(ngModel)]="userParams.minAge"
-        />
-      </div>
+    <div class="row">
+      <div class="filters-group filter-inputs col-sm-12 col-md-12 col-lg-6">
+        <div class="form-group">
+          <label> Age from: </label>
+          <input
+            type="number"
+            class="form-control"
+            style="width: 70px"
+            name="minAge"
+            [(ngModel)]="userParams.minAge"
+          />
+        </div>
 
-      <div class="form-group px-2">
-        <label> Age to: </label>
-        <input
-          type="number"
-          class="form-control ml-1"
-          style="width: 70px"
-          name="maxAge"
-          [(ngModel)]="userParams.maxAge"
-        />
-      </div>
+        <div class="form-group">
+          <label> Age to: </label>
+          <input
+            type="number"
+            class="form-control"
+            style="width: 70px"
+            name="maxAge"
+            [(ngModel)]="userParams.maxAge"
+          />
+        </div>
 
-      <div class="form-group px-2">
-        <label> Instrument: </label>
-        <select
-          name="instrument"
-          style="width: 130px"
-          class="form-control ml-1"
-          [(ngModel)]="userParams.instrument"
-        >
-          <option
-            *ngFor="let instrument of instrumentList"
-            [value]="instrument.value"
+        <div class="form-group">
+          <label> Instrument: </label>
+          <select
+            name="instrument"
+            class="form-control"
+            [(ngModel)]="userParams.instrument"
           >
-            {{ instrument.display }}
-          </option>
-        </select>
+            <option
+              *ngFor="let instrument of instrumentList"
+              [value]="instrument.value"
+            >
+              {{ instrument.display }}
+            </option>
+          </select>
+        </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="filters-group">
-        <button class="btn submission-button" type="submit">
-          Apply filters
-        </button>
-        <button
-          (click)="resetFilters()"
-          class="btn submission-button-secondary ml-1"
-          type="submit"
-        >
-          Reset filters
-        </button>
+      <div class="buttons-container col-sm-12 col-md-12 col-lg-6">
+        <div class="filters-group">
+          <button class="btn mb-1 submission-button" type="submit">
+            Apply filters
+          </button>
+          <button
+            (click)="resetFilters()"
+            class="btn mb-1 submission-button-secondary"
+            type="submit"
+          >
+            Reset filters
+          </button>
 
-        <button
-          type="button"
-          class="btn submission-button mr-1"
-          name="orderBy"
-          [(ngModel)]="userParams.orderBy"
-          (click)="loadMembers()"
-          btnRadio="lastActive"
-        >
-          Last Active
-        </button>
-        <button
-          type="button"
-          class="btn submission-button"
-          name="orderBy"
-          [(ngModel)]="userParams.orderBy"
-          (click)="loadMembers()"
-          btnRadio="created"
-        >
-          Newest Members
-        </button>
+          <button
+            type="button"
+            class="btn mb-1 submission-button"
+            name="orderBy"
+            [(ngModel)]="userParams.orderBy"
+            (click)="loadMembers()"
+            btnRadio="lastActive"
+            [ngClass]="userParams.orderBy === 'lastActive' ? 'selected' : ''"
+          >
+            Last Active
+          </button>
+          <button
+            type="button"
+            class="btn mb-1 submission-button"
+            name="orderBy"
+            [(ngModel)]="userParams.orderBy"
+            (click)="loadMembers()"
+            btnRadio="created"
+            [ngClass]="userParams.orderBy === 'created' ? 'selected' : ''"
+          >
+            Newest Members
+          </button>
+        </div>
       </div>
     </div>
   </form>
 </div>
 
-<div class="row">
+<div class="row members-list">
   <div *ngFor="let member of members" class="col-6 col-sm-6 col-md-4 col-lg-3">
     <app-member-card [member]="member"></app-member-card>
   </div>

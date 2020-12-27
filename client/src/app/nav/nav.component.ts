@@ -24,7 +24,6 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {}
 
   navBarClick() {
-    console.log('clicking');
     this.isClicked = !this.isClicked;
   }
 

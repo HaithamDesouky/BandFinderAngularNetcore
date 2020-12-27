@@ -88,7 +88,6 @@ export class RegisterComponent implements OnInit {
     } else {
       this.instruments.splice(index, 1);
     }
-    console.log(this.instruments);
   }
 
   itemExists(name: string) {
@@ -96,7 +95,6 @@ export class RegisterComponent implements OnInit {
     return index;
   }
   register() {
-    console.log(this.registerForm.value);
     this.accountService.register(this.registerForm.value).subscribe(
       (response) => {
         this.router.navigateByUrl('/members');

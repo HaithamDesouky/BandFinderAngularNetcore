@@ -30,7 +30,6 @@ export class PhotoEditorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.member, 'from editor');
     this.initializeUploader();
   }
 

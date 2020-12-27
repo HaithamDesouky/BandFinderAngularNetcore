@@ -38,7 +38,6 @@ export class ErrorInterceptor implements HttpInterceptor {
               }
               break;
             case 401:
-              console.log(error);
               break;
             case 404:
               this.router.navigateByUrl('/not-found');
@@ -54,7 +53,6 @@ export class ErrorInterceptor implements HttpInterceptor {
               break;
           }
         }
-        console.log(error);
         return throwError(error.error);
       })
     );

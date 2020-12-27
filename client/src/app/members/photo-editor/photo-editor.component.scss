@@ -15,3 +15,14 @@ img.img-thumbnail {
 input[type="file"] {
   color: transparent;
 }
+
+.photo-upload-button {
+  padding: 5px;
+  color: #d7b065;
+  background: black;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background: white;
+}
