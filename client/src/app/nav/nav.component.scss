@@ -21,6 +21,26 @@
   animation: moveInLeft 2s;
 }
 
+.profile-nav-container {
+  @media screen and (max-width: 992px) {
+    position: relative;
+  }
+}
+
+.profile-nav {
+  width: 50px;
+  border-radius: 9px;
+  margin-left: 10px;
+
+  @media screen and (max-width: 992px) {
+    position: absolute;
+    left: 125px;
+    top: 0;
+    width: 60px;
+    margin-left: 0;
+  }
+}
+
 .nav-toggle {
   position: absolute;
   z-index: 5;

@@ -10,7 +10,7 @@
 
     <ul
       [className]="isClicked ? 'nav-menu active' : 'nav-menu'"
-      *ngIf="accountService.currentUser$ | async"
+      *ngIf="accountService.currentUser$ | async as user"
     >
       <li class="nav-item">
         <a
@@ -41,12 +41,16 @@
       </li>
       <li class="nav-item">
         <a
-          class="nav-link"
+          class="nav-link profile-nav-container"
           routerLink="/member/edit"
           routerLinkActive="active"
           (click)="navBarClick()"
-          >Your account</a
-        >
+          >Your account
+          <img
+            src="{{ user.photoUrl }}"
+            alt="{{ user.username }}"
+            class="profile-nav"
+        /></a>
       </li>
 
       <li class="nav-item">
